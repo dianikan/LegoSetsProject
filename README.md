@@ -104,7 +104,7 @@ This table provides a detailed breakdown of the number of sets released each yea
 
 ### 2. Is there a relationship between the price of a set and its number of pieces?
 
-```sql
+``` sql
 WITH PriceRanges AS (
     SELECT
         CASE
@@ -133,9 +133,8 @@ ORDER BY
         WHEN price_range = '$100 - $200' THEN 5
         ELSE 6
     END;
-    ```
-The table shows a clear link between price and LEGO set size: higher price generally means more pieces. TThis likely means bigger, more complex sets cost more. It might also mean smaller sets have a higher price per piece.
-
+```
+  
 | Price Range   | Average Pieces |
 |---------------|----------------|
 | Under $10     | 60             |
@@ -144,7 +143,7 @@ The table shows a clear link between price and LEGO set size: higher price gener
 | $50 - $100    | 697            |
 | $100 - $200   | 1458           |
 | Over $200     | 3287           |
-
+The table shows a clear link between price and LEGO set size: higher price generally means more pieces. TThis likely means bigger, more complex sets cost more. It might also mean smaller sets have a higher price per piece.
 
 
     
